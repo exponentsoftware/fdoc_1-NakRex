@@ -1,4 +1,5 @@
-function countwords(para) {
+//returns number of words in the paraexcluding single letter words
+function countwords1(para) {
     let textArr = para.split(" ");
     let oneLetterCount = 0;
     textArr.forEach(element => {
@@ -7,3 +8,6 @@ function countwords(para) {
     });
     return numberOfWords = textArr.length - oneLetterCount;
 }
+
+//returns number of words in para including single letter words
+countwords2 = (para) => para.split(" ").length;
